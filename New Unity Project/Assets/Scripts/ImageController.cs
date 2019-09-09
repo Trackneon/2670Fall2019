@@ -1,15 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
+
 
 [RequireComponent(typeof(Image))]
 
 public class ImageController : MonoBehaviour
 {
     private Image imageComponent;
-    public UnityEvent UpdateImageEvent;
     
     // Start is called before the first frame update
     private void Start()
@@ -17,14 +14,13 @@ public class ImageController : MonoBehaviour
         imageComponent = GetComponent<Image>();
     }
 
-    public void UpdateImageComponent(FloatData dataobj)
+    public void UpdateImageComponent(float amount)
     {
-        imageComponent.fillAmount = dataobj.value;
+        imageComponent.fillAmount += amount;
     }
 
-    // Update is called once per frame
-    private void Update()
+    public void UpdateImageComponent(FloatData dataObj)
     {
-        UpdateImageEvent.Invoke();
+        imageComponent.fillAmount = dataObj.value;
     }
 }
