@@ -10,6 +10,6 @@ public class GameAction : ScriptableObject
     //Unity action cannot be called by other events. 
     public void Raise()
     {
-        action.Invoke();
+        action?.Invoke();
     }
 }
