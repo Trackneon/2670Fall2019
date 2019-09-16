@@ -13,8 +13,4 @@ public class TriggerEventBehavior : MonoBehaviour {
         TriggerEnterEvent.Invoke();
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        TriggerStayEvent.Invoke();
-    }
 }
