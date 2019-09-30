@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpSpeed: 30
+  jumpSpeed: 50
   gravity: 3
   jumpData: {fileID: 11400000, guid: 4231d919f330e4c4ea0c964a1ceec713, type: 2}
 --- !u!1 &2019383277
