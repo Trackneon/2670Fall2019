@@ -13,6 +13,11 @@ public class IntData : ScriptableObject
         value = maxValue;
     }
 
+    public void UpdateValue(int number)
+    {
+        value += number;
+    }
+
     public void UpdateToNumber(int number)
     {
         value = number;

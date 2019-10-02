@@ -5,12 +5,15 @@ using UnityEngine.Events;
 
 public class TriggerEventBehavior : MonoBehaviour {
 
-    public UnityEvent TriggerEnterEvent;
-    public UnityEvent TriggerStayEvent;
+    public UnityEvent TriggerEnterEvent, TriggerExitEvent;
 
     private void OnTriggerEnter(Collider other)
     {
         TriggerEnterEvent.Invoke();
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        TriggerExitEvent.Invoke();
+    }
 }
