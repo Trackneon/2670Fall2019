@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EventListening : MonoBehaviour, IListen
+public class TriggerEventListener : MonoBehaviour, IListen
 {
-    
-    public UnityEvent Event { get; set; }
     public Object IRunObj;
     public IRun NewIRunObj { get; set; }
+    public UnityEvent Event { get; set; }
 
+    // Start is called before the first frame update
     public void Start()
     {
-        // mouseClickEvent.AddListener();
         Event = new UnityEvent();
         NewIRunObj = IRunObj as IRun;
         Event.AddListener(NewIRunObj.Run);
     }
 
-
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
     {
         Event.Invoke();
         Event.RemoveListener(NewIRunObj.Run);
     }
+
 }
