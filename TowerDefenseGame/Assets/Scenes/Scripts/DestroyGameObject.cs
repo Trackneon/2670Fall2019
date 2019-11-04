@@ -5,6 +5,6 @@ using UnityEngine.Events;
 
 public class DestroyGameObject : MonoBehaviour
 {
-    void  
+    //void  
 
 }
