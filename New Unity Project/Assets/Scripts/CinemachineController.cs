@@ -1,26 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
+//using Cinemachine;
 
 
-[RequireComponent(typeof(CinemachineVirtualCamera))]
+//[RequireComponent(typeof(CinemachineVirtualCamera))]
 public class CinemachineController : MonoBehaviour
 {
 
     public GameAction gameActionObj;
-    private CinemachineVirtualCamera virtualCamera;
+    //private CinemachineVirtualCamera virtualCamera;
 
 
     void Start()
     {
         gameActionObj.transformAction = TransformHandler;
-        virtualCamera = GetComponent<CinemachineVirtualCamera>();
+       // virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
 
     private void TransformHandler(Transform transformObj)
     {
-        virtualCamera.Follow = transformObj;
+        //virtualCamera.Follow = transformObj;
     }
 
 
