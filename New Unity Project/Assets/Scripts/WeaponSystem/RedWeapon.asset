@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 457a742514cbeab4c9eacee4ae64e5f0, type: 3}
   m_Name: RedWeapon
   m_EditorClassIdentifier: 
+  damageAction: {fileID: 11400000, guid: c4d7b6ccc00cafd41a2d218882437ab4, type: 2}
+  firePower: -0.1
   weaponColor: {r: 1, g: 0, b: 0, a: 1}
-  ammoObj: {fileID: 0}
+  weaponArt: {fileID: 0}
+  ammoObj: {fileID: 75836584916409078, guid: 14e8ad897651dcd45ac0fd25ad771377, type: 3}
+  playerHealth: {fileID: 11400000, guid: 124a67a6b601b48449faab27f4a83a22, type: 2}

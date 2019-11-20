@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457a742514cbeab4c9eacee4ae64e5f0, type: 3}
-  m_Name: GreenWeapon
+  m_Script: {fileID: 11500000, guid: 3191e66a6faf1b040b9ab4e85847f440, type: 3}
+  m_Name: Health
   m_EditorClassIdentifier: 
-  damageAction: {fileID: 0}
-  firePower: -0.1
-  weaponColor: {r: 0.21530414, g: 1, b: 0, a: 1}
-  ammoObj: {fileID: 0}
-  playerHealth: {fileID: 0}
+  value: 1
+  maxValue: 1

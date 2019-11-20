@@ -9,16 +9,16 @@ public class WeaponHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var child = Instantiate(weaponObj.weaponArt, transform);
         weaponObj.weaponFireAction = Fire;
-        var renderer = GetComponent<Renderer>();
+        var renderer = child.GetComponent<Renderer>();
         renderer.material.color = weaponObj.weaponColor;
     }
 
     public void Fire()
     {
         var ammo = Instantiate(weaponObj.ammoObj);
-        var renderer = ammo.GetComponent<Renderer>();
-        renderer.material.color = weaponObj.weaponColor;
+        ammo.GetComponent<AmmoHandler>().weaponObj = weaponObj;
     }
 
     private void OnTriggerEnter(Collider other)

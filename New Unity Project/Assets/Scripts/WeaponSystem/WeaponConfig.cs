@@ -6,8 +6,10 @@ public class WeaponConfig : ScriptableObject
 {
     public UnityAction weaponFireAction;
     public UnityAction collectWeaponAction;
+    public GameAction damageAction;
     public float firePower = 0.1f;
     public Color weaponColor = Color.red;
+    public GameObject weaponArt;
     public GameObject ammoObj;
     public FloatData playerHealth;
 
@@ -24,5 +26,8 @@ public class WeaponConfig : ScriptableObject
     public void DoDamage()
     {
         playerHealth.UpdateValue(firePower);
+        damageAction.Raise();
     }
+
+
 }
