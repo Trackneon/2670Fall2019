@@ -6,6 +6,9 @@ using UnityEngine;
 public class WeaponHandler : MonoBehaviour
 {
     public WeaponConfig weaponObj;
+    public Transform bullet;
+    public Transform location;
+    
     void Start()
     {
         var child = Instantiate(weaponObj.weaponArt, transform);
@@ -16,7 +19,7 @@ public class WeaponHandler : MonoBehaviour
 
     public void Fire()
     {
-        var ammo = Instantiate(weaponObj.ammoObj);
+        var ammo = Instantiate(bullet, location.position, location.rotation);
         ammo.GetComponent<AmmoHandler>().weaponObj = weaponObj;
     }
 

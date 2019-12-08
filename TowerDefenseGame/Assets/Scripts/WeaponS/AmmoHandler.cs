@@ -9,6 +9,7 @@ public class AmmoHandler : MonoBehaviour
     private Rigidbody rigidbodyObj;
     public Vector3 Forces;
     public WeaponConfig weaponObj;
+    public GameObject enemyPrefab;
     
     void Start()
     {
@@ -16,11 +17,11 @@ public class AmmoHandler : MonoBehaviour
         renderer.material.color = weaponObj.weaponColor;
         rigidbodyObj = GetComponent<Rigidbody>();
         rigidbodyObj.AddForce(Forces);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 3f);
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        weaponObj.DoDamage();
+        Destroy(gameObject);
     }
 }

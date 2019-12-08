@@ -17,5 +17,6 @@ MonoBehaviour:
   weaponArt: {fileID: 5435644471075980148, guid: 4124a642c0aad3e49aa65025b0506147,
     type: 3}
   ammoObj: {fileID: 719641713431110899, guid: 9ec438b8d52d7f2468dd256129e992bd, type: 3}
+  enemyPrefab: {fileID: 0}
   firePower: -0.1
-  playerHealth: {fileID: 11400000, guid: 5ed437216385d7d4eac785de214b69e3, type: 2}
+  playerHealth: {fileID: 0}

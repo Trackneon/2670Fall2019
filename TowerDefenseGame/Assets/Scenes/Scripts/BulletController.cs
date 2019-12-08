@@ -21,9 +21,9 @@ public class BulletController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             Instantiate(bullet, location.position, location.rotation);
-            bulletObj.AddForce(force);
             bulletObj = GetComponent<Rigidbody>();
-            Destroy(gameObject);
+            bulletObj.AddForce(force);
+
         }
     }
 

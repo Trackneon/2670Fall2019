@@ -10,6 +10,7 @@ public class WeaponConfig : ScriptableObject
     public Color weaponColor = Color.red;
     public GameObject weaponArt;
     public GameObject ammoObj;
+    public GameObject enemyPrefab;
 
     public float firePower = 0.1f;
     public FloatData playerHealth; 
@@ -29,9 +30,10 @@ public class WeaponConfig : ScriptableObject
         return weaponColor;
     }
 
-    public void DoDamage()
-    {
-        playerHealth.UpdateValue(firePower);
-        damageAction.Raise();
-    }
+    //public void DoDamage()
+    //{
+    //    playerHealth.UpdateValue(firePower);
+    //    damageAction.Raise();
+        
+    //}
 }
