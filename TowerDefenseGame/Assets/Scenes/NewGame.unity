@@ -820,7 +820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 545.5, y: -337}
+  m_AnchoredPosition: {x: 474.3, y: -295.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472589006
@@ -1119,11 +1119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2094865369}
     m_Modifications:
-    - target: {fileID: 2680843981304306709, guid: b7fff7dd13faab847a85dcd8f1cb320c,
-        type: 3}
-      propertyPath: m_Name
-      value: Weapon
-      objectReference: {fileID: 0}
     - target: {fileID: 2680843981304306702, guid: b7fff7dd13faab847a85dcd8f1cb320c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1178,6 +1173,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680843981304306709, guid: b7fff7dd13faab847a85dcd8f1cb320c,
+        type: 3}
+      propertyPath: m_Name
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7fff7dd13faab847a85dcd8f1cb320c, type: 3}
