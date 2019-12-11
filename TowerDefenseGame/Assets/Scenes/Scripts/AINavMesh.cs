@@ -9,7 +9,7 @@ public class AINavMesh : MonoBehaviour
 {
 
     private NavMeshAgent agent;
-    public Transform end;
+   public Transform end;
     public Transform destination;
 
     // Start is called before the first frame update

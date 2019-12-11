@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7952199792157113199}
   - component: {fileID: 7952199792157113198}
   - component: {fileID: 6880008526964342674}
-  - component: {fileID: -1850558790588026124}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7952199792157113192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 40.1, y: 0, z: -4.7}
-  m_LocalScale: {x: 2, y: 0.110466, z: 2}
+  m_LocalScale: {x: 77.47046, y: 4.278926, z: 77.47046}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,8 +93,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22de8584d1ef9c143b022eb46c296d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  end: {fileID: 0}
-  destination: {fileID: 0}
+  end: {fileID: 8717279461150158392, guid: e817551f47d286a40bba6d56fb93cb9b, type: 3}
+  destination: {fileID: 8717279461150158392, guid: e817551f47d286a40bba6d56fb93cb9b,
+    type: 3}
 --- !u!195 &7952199792157113198
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -106,13 +106,13 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 500
-  m_Acceleration: 250
+  m_Speed: 400
+  m_Acceleration: 100
   avoidancePriority: 50
-  m_AngularSpeed: 500
+  m_AngularSpeed: 400
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
+  m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
@@ -129,21 +129,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 80, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &-1850558790588026124
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7952199792157113192}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
+  m_Size: {x: 1.0927486, y: 28.700903, z: 1.1455504}
+  m_Center: {x: 0.01684475, y: -3.5112965, z: 0.0018594861}

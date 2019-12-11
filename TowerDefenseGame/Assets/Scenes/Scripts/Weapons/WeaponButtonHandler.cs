@@ -19,12 +19,9 @@ public class WeaponButtonHandler : MonoBehaviour
         buttonImg.color = weaponObj.weaponColor;
         buttonText = GetComponentInChildren<Text>();
         buttonText.text = weaponObj.name + " Fire";
-        //weaponObj.collectWeaponAction = OnCollectWeapon;
         weaponButton.interactable = true;
     }
 
-    //public void OnCollectWeapon()
-    //{
-    //    weaponButton.interactable = true;
-    //}
+
+
 }

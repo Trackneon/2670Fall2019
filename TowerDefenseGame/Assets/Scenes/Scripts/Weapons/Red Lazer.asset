@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b660918a3d153c64b9e139b2b2e41f0b, type: 3}
-  m_Name: Blue Lazer
+  m_Name: Red Lazer
   m_EditorClassIdentifier: 
   damageAction: {fileID: 11400000, guid: f702795a9efe07748999e325279afa60, type: 2}
-  weaponColor: {r: 0, g: 0.06005001, b: 1, a: 1}
-  weaponArt: {fileID: 1077507440592958638, guid: b8aac110df08d104e97f47e50a4edc56,
+  weaponColor: {r: 1, g: 0, b: 0, a: 1}
+  weaponArt: {fileID: 5435644471075980148, guid: 4124a642c0aad3e49aa65025b0506147,
     type: 3}
   ammoObj: {fileID: 719641713431110899, guid: 9ec438b8d52d7f2468dd256129e992bd, type: 3}
-  firePower: -0.2
-  playerHealth: {fileID: 11400000, guid: 5ed437216385d7d4eac785de214b69e3, type: 2}
+  enemyPrefab: {fileID: 7952199792157113192, guid: 33381712e99ace6469146acc33b64c0b,
+    type: 3}
+  firePower: -0.1
+  playerHealth: {fileID: 0}
